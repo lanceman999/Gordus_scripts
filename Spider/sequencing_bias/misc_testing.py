@@ -2,9 +2,5 @@
 import os
 
 pileup_file = 'MaleProsoma_scaffold_5_.mpileup'
-
-base_name = os.path.splitext(os.path.basename(pileup_file))[0]
-
-scaffold_number = "_".join(base_name.split("_")[1:3])
-
-print(str(scaffold_number))
+REALbase_name = "_".join(pileup_file.split("_")[0:3])
+print(REALbase_name)
